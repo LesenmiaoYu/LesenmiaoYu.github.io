@@ -24,4 +24,15 @@ export default class World {
   resize() {}
 
   update() {}
+
+  updateScroll(scrollY) {
+    const normalizedScroll = scrollY / document.body.scrollHeight;
+
+    // Example: Move the room model up and down based on scroll
+    if (this.room && this.room.actualRoom) {
+      this.room.actualRoom.position.y = -normalizedScroll * 5;
+    }
+  }
+
+
 }

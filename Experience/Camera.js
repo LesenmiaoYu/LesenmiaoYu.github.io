@@ -24,8 +24,8 @@ export default class Camera {
     );
     this.scene.add(this.perspectiveCamera);
     this.perspectiveCamera.position.x = 0.12424;
-    this.perspectiveCamera.position.y = 4.09747;
-    this.perspectiveCamera.position.z = 6.276327;
+    this.perspectiveCamera.position.y = 5.09747;
+    this.perspectiveCamera.position.z = 8.276327;
   }
 
   createOrthographicCamera() {
@@ -59,7 +59,8 @@ export default class Camera {
   setOrbitControls() {
     this.controls = new OrbitControls(this.perspectiveCamera, this.canvas);
     this.controls.enableDamping = true;
-    this.controls.enableZoom = true;
+    this.controls.enableZoom = false; // Disable zoom
+    this.controls.enabled = true;  // Disable controls
   }
 
   //resize function for the cameras (copied)
