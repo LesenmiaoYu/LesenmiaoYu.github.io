@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -20,29 +21,76 @@
     </div>
 
     <div id="content">
-      <section>
-        <h1>As way of introduction:</h1>
-        <p>Here is some content.</p>
+      <!-- Section 1: Text left, image right -->
+      <section class="content-section image-right">
+        <div class="text-container">
+          <h1>As way of introduction:</h1>
+          <p>Hello! I'm Lesenmiao "David" Yu, a passionate professional at the intersection of Computer Science, Business Administration, and Psychology. With a GPA of 3.9 and dual degrees from the University of Southern California, I bring a unique blend of technical expertise, business acumen, and a deep understanding of human behavior to everything I do.</p>
+          <p>Over the years, I’ve honed my skills across diverse roles, from developing innovative tech solutions as a Full-Stack Web Developer to leading business transformation projects as a Product Manager. My experience spans product management, data analytics, and marketing strategy, always with a focus on leveraging cutting-edge technology to drive measurable results.</p>
+
+        </div>
+        <div class="image-container">
+          <img src="./public/personal.png" alt="Introduction Image" />
+        </div>
       </section>
-      <section>
-        <h1>My experience:</h1>
-        <p>More text here...</p>
+      <br/>
+
+      <!-- Section 2: Image left, text right -->
+      <section class="content-section image-left">
+        <div class="image-container">
+          <img src="./public/flowers.png" alt="Experience Image" />
+        </div>
+        <div class="text-container">
+          <h1>My experience:</h1>
+          <p>More text here...</p>
+        </div>
       </section>
-      <section>
-        <h1>My projects:</h1>
-        <p>More text here...</p>
+      <br/>
+
+      <!-- Section 3: Text left, image right -->
+      <section class="content-section image-right">
+        <div class="text-container">
+          <h1>My projects:</h1>
+          <p>More text here...</p>
+        </div>
+        <div class="image-container">
+          <img src="./public/desk.png" alt="Projects Image" />
+        </div>
       </section>
-      <section>
-        <h1>Contact me:</h1>
-        <p>More text here...</p>
+      <br/>
+
+      <!-- Section 4: Image left, text right -->
+      <section class="content-section image-left">
+        <div class="image-container">
+          <img src="./public/contact.png" alt="Contact Image" />
+        </div>
+        <div class="text-container">
+          <h1>Contact me:</h1>
+          <p>I’m committed to continuous growth and making a meaningful impact in the communities I serve. Whether optimizing healthcare processes, designing scalable tech platforms, or pioneering new products, I approach each challenge with creativity, precision, and a results-driven mindset.</p>
+          <p>When I’m not working, you can find me exploring music, playing MOBAs, or enjoying the great outdoors. Feel free to explore my projects, connect with me, or just say hi!</p>
+          <br/>
+          <div class="contact-icons">
+            <a href="mailto:dyu18149@usc.edu" target="_blank">
+              <i class="fas fa-envelope" title="Email"></i>
+            </a>
+            <a href="tel:+12138003788" target="_blank">
+              <i class="fas fa-phone" title="Phone"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/Lesenmiao-Yu" target="_blank">
+              <i class="fab fa-linkedin" title="LinkedIn"></i>
+            </a>
+            <a href="https://github.com/LesenmiaoYu" target="_blank">
+              <i class="fab fa-github" title="GitHub"></i>
+            </a>
+          </div>
+        </div>
       </section>
+      <br/>
     </div>
 
     <footer id="footer">
       Thank you for visiting!
     </footer>
-
-
 
     <script type="module" src="/main.js"></script>
 
