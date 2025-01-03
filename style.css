@@ -100,6 +100,8 @@ body {
 
 /* General styling for sections */
 section.content-section {
+  padding-left: 20px; /* Add horizontal padding on the left */
+  padding-right: 20px; /* Add horizontal padding on the right */
   display: flex; /* Use Flexbox for horizontal layout */
   align-items: center; /* Vertically center align items */
   background-color: white; /* Set background color for content */
@@ -180,7 +182,7 @@ section.content-section {
 }
 
 .contact-icons a:hover {
-  color: #007bff; /* Highlight color on hover */
+  color: #2c5f34; /* Highlight color on hover */
 }
 
 .contact-icons i {
