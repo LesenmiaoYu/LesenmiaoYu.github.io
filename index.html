@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./public/flowers.png" />
+    <link rel="icon" type="image/svg+xml" href="./flowers.png" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesenmiao's World</title>
@@ -30,7 +30,7 @@
 
         </div>
         <div class="image-container">
-          <img src="./public/personal.png" alt="Introduction Image" />
+          <img src="./personal.png" alt="Introduction Image" />
         </div>
       </section>
       <br/>
@@ -38,11 +38,16 @@
       <!-- Section 2: Image left, text right -->
       <section class="content-section image-left">
         <div class="image-container">
-          <img src="./public/flowers.png" alt="Experience Image" />
+          <img src="./flowers.png" alt="Experience Image" />
         </div>
         <div class="text-container">
           <h1>My experience:</h1>
-          <p>More text here...</p>
+          <p>I’ve had the chance to explore a lot of different paths, from building web platforms as a Full-Stack Developer to managing products and leading marketing strategies. I’ve started my own business, worked on healthcare projects, and even dived into data analytics—all of it giving me a mix of technical, creative, and business skills.</p>
+          <p>What I love most is learning and trying new things. Every role I’ve taken on has taught me something new and helped me see challenges from fresh perspectives. Whether it’s launching a product or brainstorming the next big idea, I’m always excited to keep growing and exploring.</p>
+          <p style="font-family: 'MyCustomFont', sans-serif; font-size: 1.5rem; margin: 10px 0 0; padding: 0; color: #000000;">
+            My life in one page of PDF?
+            <a href="#" style="color: #2c5f34; text-decoration: underline;" onclick="downloadPDF(event)">here it is</a>.
+          </p>
         </div>
       </section>
       <br/>
@@ -54,7 +59,7 @@
           <p>More text here...</p>
         </div>
         <div class="image-container">
-          <img src="./public/desk.png" alt="Projects Image" />
+          <img src="./desk.png" alt="Projects Image" />
         </div>
       </section>
       <br/>
@@ -62,7 +67,7 @@
       <!-- Section 4: Image left, text right -->
       <section class="content-section image-left">
         <div class="image-container">
-          <img src="./public/contact.png" alt="Contact Image" />
+          <img src="./contact.png" alt="Contact Image" />
         </div>
         <div class="text-container">
           <h1>Contact me:</h1>
@@ -93,6 +98,17 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script>
+      function downloadPDF(event) {
+        event.preventDefault();
+        const link = document.createElement('a');
+        // Update the href with the direct raw GitHub URL to your file
+        link.href = 'https://raw.githubusercontent.com/LesenmiaoYu/LesenmiaoYu.github.io/main/public/LesenmiaoYu_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
 
   </body>
 </html>
